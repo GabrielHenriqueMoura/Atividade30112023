@@ -20,7 +20,7 @@ class UserList extends StatelessWidget {
       appBar: AppBar(
         title: Text("Lista de Usuários"),
         actions: [IconButton(onPressed: () {
-          User user = User(id: '', nome: "Zeca", email: "Zeca@gmail.com", avatarURL: '',); 
+          User user = User(id: '1', nome: "Zeca", email: "Zeca@gmail.com", avatarURL: '',); 
            users.put(user);
         }, icon: Icon(Icons.add)),],
        

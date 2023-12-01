@@ -21,10 +21,14 @@ return _items.values.elementAt(indice);
        void put(User user){
          //a condição vai verificar se já existe o id e se não está vazio
          if(user.id.trim().isNotEmpty && _items.containsKey(user.id)){
+
            //update:
+           _items.update(user.id, (_) => User(id: user.id, nome: user.nome, email: user.email,  avatarURL: user.avatarURL),);
          }
          else{
 //insert
+final id = Random().nextDouble().toString();
+_items.putIfAbsent(id, () => User(id: user.id, nome: user.nome, email: user.email,  avatarURL: user.avatarURL));
          }
          final id = Random().nextDouble().toString();
         //enviando endereço de memória

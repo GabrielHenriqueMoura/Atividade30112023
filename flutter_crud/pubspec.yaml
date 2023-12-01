@@ -30,8 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  provider:
-// Sempre que estiver com um espaçamento a menos que o flutter anterior ele irá entender que se trata de um subpacote do flutter
+  provider: 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
